@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #111;
+  color: #eee;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  border-bottom: 1px solid #333;
+}
+
+.poster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  justify-items: center;
+}
+
+.poster img {
+  width: auto;
+  height: 360px; /* or 480px for taller posters */
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.poster:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00f2ff;
+}

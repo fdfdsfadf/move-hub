@@ -21,9 +21,11 @@ header, footer {
 }
 
 .poster img {
-  width: 100%;
-  max-width: 240px;
+  width: auto;
+  height: 360px; /* or 480px for taller posters */
+  max-width: 100%;
   border-radius: 8px;
+  object-fit: cover;
   transition: transform 0.2s ease;
 }
 

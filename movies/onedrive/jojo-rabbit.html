@@ -6,10 +6,27 @@
   <title>Jojo Rabbit (2019)</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .video-wrapper {
-      position: relative;
+    body {
+      background: radial-gradient(circle at top left, #2e3440, #3b4252, #434c5e);
+      color: #eceff4;
+      font-family: system-ui, sans-serif;
       text-align: center;
-      margin: 2rem auto;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      color: #d8dee9;
+    }
+
+    .video-wrapper {
+      margin: 0 auto;
       max-width: 800px;
     }
 
@@ -34,6 +51,19 @@
     .fullscreen-btn:hover {
       background: #00c2cc;
     }
+
+    footer {
+      margin-top: 2rem;
+    }
+
+    a {
+      color: #88c0d0;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -42,14 +72,16 @@
     <p>War • World War 2 • Romance</p>
   </header>
 
-  <main style="padding: 2rem; text-align: center;">
+  <main>
     <div class="video-wrapper" id="videoContainer">
       <iframe
-        src="https://1drv.ms/v/s!AlIFHYeApM-gcznNs_Xf3VQatuU?embed=1"
-        allow="autoplay"
+        src="https://onedrive.live.com/embed?resid=AlIFHYeApM-gcznNs_Xf3VQatuU&authkey=!ACXvQJvZJvYJxZg&em=2"
+        frameborder="0"
+        scrolling="no"
         allowfullscreen
       ></iframe>
     </div>
+    <button class="fullscreen-btn" onclick="goFullscreen()">Fullscreen</button>
   </main>
 
   <footer>

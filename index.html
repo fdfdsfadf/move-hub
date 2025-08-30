@@ -11,19 +11,55 @@
     <h1>🎬 Macbooksuck Movie Hub</h1>
   </header>
 
-  <main class="grid">
-    <div class="card">
-      <img src="assets/posters/blade-runner.jpg" alt="Blade Runner Poster" />
-      <h2>Blade Runner (1982)</h2>
-      <p class="tags">Cyberpunk • Sci-Fi • Noir</p>
+<main class="grid">
+
+  <!-- Standard Poster Card -->
+  <div class="card poster">
+    <img src="assets/posters/blade-runner.jpg" alt="Blade Runner Poster" />
+    <h2>Blade Runner (1982)</h2>
+    <p class="tags">Cyberpunk • Sci-Fi • Noir</p>
+    <video controls preload="metadata">
+      <source src="movies/blade-runner.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <!-- Horizontal Card with Description -->
+  <div class="card horizontal">
+    <img src="assets/posters/matrix.jpg" alt="The Matrix Poster" />
+    <div class="info">
+      <h2>The Matrix (1999)</h2>
+      <p class="tags">Action • Dystopia • Hacker</p>
+      <p class="desc">A hacker discovers reality is a simulation and joins a rebellion against the machines.</p>
       <video controls preload="metadata">
-        <source src="movies/blade-runner.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+        <source src="movies/matrix.mp4" type="video/mp4" />
       </video>
     </div>
+  </div>
 
-    <!-- Add more movie cards here -->
-  </main>
+  <!-- Minimalist Card -->
+  <div class="card minimalist">
+    <h2>Arrival (2016)</h2>
+    <p class="tags">Drama • Sci-Fi • Linguistics</p>
+    <video controls preload="metadata">
+      <source src="movies/arrival.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <!-- Metadata-Focused Card -->
+  <div class="card meta">
+    <h2>Ex Machina (2014)</h2>
+    <ul class="meta-list">
+      <li><strong>Director:</strong> Alex Garland</li>
+      <li><strong>Runtime:</strong> 108 min</li>
+      <li><strong>Rating:</strong> 7.7/10</li>
+    </ul>
+    <video controls preload="metadata">
+      <source src="movies/ex-machina.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+</main>
+
 
   <footer>
     <p>© 2025 Macbooksuck Vault</p>

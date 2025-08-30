@@ -19,29 +19,50 @@ header, footer {
   padding: 2rem;
 }
 
+/* Base styles */
 .card {
   background: #1a1a1a;
   border: 1px solid #333;
   padding: 1rem;
   border-radius: 8px;
+  color: #eee;
 }
 
-.card img {
+/* Poster Card */
+.card.poster img {
   width: 100%;
   border-radius: 4px;
 }
 
-.card h2 {
-  margin: 0.5rem 0;
+/* Horizontal Card */
+.card.horizontal {
+  display: flex;
+  gap: 1rem;
+}
+.card.horizontal img {
+  width: 150px;
+  border-radius: 4px;
+}
+.card.horizontal .info {
+  flex: 1;
 }
 
-.tags {
+/* Minimalist Card */
+.card.minimalist {
+  text-align: center;
+  background: #111;
+  border: 1px dashed #444;
+}
+
+/* Metadata-Focused Card */
+.card.meta ul.meta-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.card.meta ul.meta-list li {
+  margin-bottom: 0.5rem;
   font-size: 0.9rem;
-  color: #aaa;
-  margin-bottom: 1rem;
+  color: #ccc;
 }
 
-video {
-  width: 100%;
-  border-radius: 4px;
-}

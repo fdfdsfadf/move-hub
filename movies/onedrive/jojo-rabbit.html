@@ -6,7 +6,12 @@
   <title>Jojo Rabbit (2019)</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-
+    body {
+      background-color: #3b4252;
+      background-image: radial-gradient(circle at top left, #2e3440, #3b4252, #434c5e);
+      color: #eceff4;
+      font-family: sans-serif;
+    }
 
     h1 {
       font-size: 2rem;
@@ -20,6 +25,7 @@
     }
 
     .video-wrapper {
+      position: relative;
       margin: 0 auto;
       max-width: 800px;
     }
@@ -29,6 +35,16 @@
       height: 480px;
       border: none;
       border-radius: 8px;
+    }
+
+    .click-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      z-index: 10;
     }
 
     .fullscreen-btn {
@@ -70,11 +86,11 @@
     <div class="video-wrapper" id="videoContainer">
       <iframe
         src="https://onedrive.live.com/embed?resid=A0CFA480871D0552!115&authkey=!ADnNs_Xf3VQatuU&ithint=video%2cmp4"
-        frameborder="0"
-        scrolling="no"
         allowfullscreen
       ></iframe>
+      <div class="click-overlay" onclick="window.location.href='https://1drv.ms/v/s!AlIFHYeApM-gc-tGmh1i21ihBbI?e=S546t3'"></div>
     </div>
+    <button class="fullscreen-btn" onclick="goFullscreen()">Fullscreen</button>
   </main>
 
   <footer>

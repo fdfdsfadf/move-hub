@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Fall – Choose Source</title>
+  <link rel="stylesheet" href="/styles.css" />
+<style>
+  body {
+    background: radial-gradient(circle at top left, #2e3440, #3b4252, #434c5e);
+    color: #eceff4;
+    font-family: system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #d8dee9;
+  }
+
+  .choice-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .choice-card {
+    background-color: #5e81ac;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .choice-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .choice-card.onedrive {
+    background: linear-gradient(135deg, #a3be8c, #8fbcbb);
+  }
+
+  .choice-card.googledrive {
+    background: linear-gradient(135deg, #81a1c1, #88c0d0);
+  }
+
+  .back-link {
+    margin-top: 2rem;
+    color: #d8dee9;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+
+  .back-link:hover {
+    color: #ffffff;
+  }
+</style>
+</head>
+<body>
+  <h1>🎬 Jojo Rabbit (2019)</h1>
+  <p>Choose your preferred source to stream or download:</p>
+
+  <div class="choice-grid">
+    <a href="https://1drv.ms/v/s!AlIFHYeApM-gcznNs_Xf3VQatuU?embed=1" class="choice-card onedrive">📁 OneDrive</a>
+    <a href="https://movie-hub.macbooksuck.xyz/movies/google/the-fall.html" class="choice-card googledrive">📁 Google Drive(preferred if not blocked)</a>
+  </div>
+
+  <a href="/index.html" class="back-link">← Back to Movie Hub</a>
+</body>
+</html>
